@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CalculatorTest {
+class BasicCalculatorTest {
     @DisplayName("인자 두 개를 받아서 더한 값을 변환한다.")
     @Test
     void testAdd(){
         //given
-        Calculator calculator = new Calculator();
+        BasicCalculator calculator = new BasicCalculator();
 
         //when
         int result = calculator.add(1,2);
@@ -22,7 +22,7 @@ class CalculatorTest {
     @Test
     void testSubtract(){
         //given
-        Calculator calculator = new Calculator();
+        BasicCalculator calculator = new BasicCalculator();
 
         //when
         int result = calculator.subtract(1,2);
@@ -34,7 +34,7 @@ class CalculatorTest {
     @Test
     void testMultiply(){
         //given
-        Calculator calculator = new Calculator();
+        BasicCalculator calculator = new BasicCalculator();
 
         //when
         int result = calculator.multiply(1,2);
@@ -46,7 +46,7 @@ class CalculatorTest {
     @Test
     void testDivide(){
         //given
-        Calculator calculator = new Calculator();
+        BasicCalculator calculator = new BasicCalculator();
 
         //when
         int result = calculator.divide(4,2);
